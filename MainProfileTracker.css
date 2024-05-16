@@ -1,0 +1,34 @@
+.default-owed-icon:before {
+	content: '\2794';
+	font-style: normal;
+	font-family: verdana, arial, sans-serif;
+}
+
+.default-completed-icon:before {
+	content: '\2713';
+	font-style: normal;
+	font-family: verdana, arial, sans-serif;
+}
+
+.tracker-item a {
+	font-size: 20px;
+}
+
+.tracker-item .status {
+	width: 1.5em;
+	text-align: center;
+}
+.tracker-item .completed {
+	color: green;
+	font-size: 20px;
+}
+.tracker-item .owed {
+	color: brown;
+	font-size: 20px;
+}
+
+.tracker-item hr {
+	background-color: #000;
+	border: none;
+	height: 2px;
+}
