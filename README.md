@@ -9,6 +9,21 @@ This tracker code uses a different kind of search method and allows an unlimited
 The raw code is available in this github repository for example and learning purposes. For installation directly onto a jcink site, please see
 [free codes link here]
 
+## What This Can't Do
+
+Due to the search link used ('get all posts by this user' versus the traditional search link), you can't limit the code to only include certain forums. It will always search for the first 5 pages (or roughly 125 threads) of the user's posts.
+
+This code ONLY takes forum IDs. It does not take category IDs or forum names of any kind.
+
+## Known Bugs
+
+Right now the code considers _all_ locked threads as 'archived' by default. A workaround for this is to provide a different class to the lockedClass param so it assumes the locked thread isn't locked. (Note that if you do this then all locked threads will be considered 'active' unless they are in one of the archived forums.)
+
+## Future Enhancements
+
+- A 'loading' spinner to your active and archived thread containers while the code is searching for threads.
+- the ability to set specific icons for specific containers (ex: using a different icon for 'comms' and 'archived comms' threads)
+
 ## How to Use
 
 Insert the following HTML code into your main profile template where you want the tracker to appear.
